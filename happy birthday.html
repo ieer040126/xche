@@ -1,0 +1,1193 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12月19日生日快乐，陈小皓！</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #fef7fb;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(#ffd1e8 2px, transparent 2px),
+                radial-gradient(#e6f3ff 2px, transparent 2px);
+            background-size: 60px 60px, 40px 40px;
+            background-position: 0 0, 30px 30px;
+            min-height: 100vh;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* 顶部装饰 */
+        .header-decoration {
+            height: 180px;
+            background: linear-gradient(135deg, #ff9ec0, #ff6b9d);
+            position: relative;
+            border-radius: 0 0 60% 60%;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+        }
+        
+        .header-decoration::before {
+            content: "♥";
+            position: absolute;
+            top: 20px;
+            left: 10%;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.3);
+            animation: floatHeart 8s infinite ease-in-out;
+        }
+        
+        .header-decoration::after {
+            content: "🎂";
+            position: absolute;
+            top: 40px;
+            right: 15%;
+            font-size: 2.5rem;
+            color: rgba(255, 255, 255, 0.3);
+            animation: floatBirthday 10s infinite ease-in-out;
+        }
+        
+        @keyframes floatHeart {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+        
+        @keyframes floatBirthday {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(15px) rotate(-10deg); }
+        }
+        
+        /* 标题区域 */
+        .birthday-header {
+            text-align: center;
+            padding: 40px 20px 30px;
+            position: relative;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            margin-top: -50px;
+            box-shadow: 0 15px 35px rgba(255, 107, 157, 0.15);
+            border: 3px solid #ffd1e8;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: linear-gradient(to right, #ff6b9d, #ff4081);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
+        }
+        
+        .birthday-title {
+            font-size: 3.2rem;
+            color: #ff4081;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0 #ffd1e8;
+            letter-spacing: 1px;
+        }
+        
+        .birthday-name {
+            font-size: 4.2rem;
+            color: #ff0066;
+            background: linear-gradient(to right, #ff0066, #ff6b9d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            margin: 20px 0;
+            padding: 0 25px;
+            border-radius: 20px;
+            position: relative;
+            text-shadow: 1px 1px 0 #fff;
+            animation: nameGlow 3s infinite alternate;
+        }
+        
+        @keyframes nameGlow {
+            0% { filter: drop-shadow(0 0 5px rgba(255, 107, 157, 0.5)); }
+            100% { filter: drop-shadow(0 0 15px rgba(255, 107, 157, 0.8)); }
+        }
+        
+        .birthday-name::before {
+            content: "🎉";
+            position: absolute;
+            left: -30px;
+            top: 10px;
+            font-size: 2.8rem;
+            animation: bounce 2s infinite;
+        }
+        
+        .birthday-name::after {
+            content: "🎁";
+            position: absolute;
+            right: -30px;
+            top: 10px;
+            font-size: 2.8rem;
+            animation: bounce 2s infinite reverse;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        /* 星座专区 */
+        .zodiac-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            margin: 50px 0;
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.1);
+            border: 2px solid #ffe6f2;
+        }
+        
+        .zodiac-title {
+            font-size: 2.5rem;
+            color: #ff4081;
+            margin-bottom: 20px;
+        }
+        
+        .zodiac-icon {
+            font-size: 4rem;
+            color: #ff6b9d;
+            margin: 20px 0;
+            display: block;
+        }
+        
+        .zodiac-desc {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        /* 特别日期区域 */
+        .special-date {
+            background: linear-gradient(135deg, #ffd1e8, #e6f3ff);
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            margin: 50px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.15);
+        }
+        
+        .special-date::before {
+            content: "12.19";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 15rem;
+            font-weight: bold;
+            color: rgba(255, 107, 157, 0.1);
+            z-index: 0;
+        }
+        
+        .special-date-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .date-title {
+            font-size: 2.8rem;
+            color: #ff4081;
+            margin-bottom: 15px;
+        }
+        
+        .date-subtitle {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .countdown-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 100px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff4081;
+        }
+        
+        .countdown-label {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        /* 祝福卡片区域 */
+        .wishes-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .wish-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid #ffe6f2;
+        }
+        
+        .wish-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(255, 107, 157, 0.15);
+        }
+        
+        .wish-card::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 20px;
+            background: linear-gradient(to right, #ff6b9d, #ff4081);
+            border-radius: 10px;
+        }
+        
+        .wish-icon {
+            font-size: 3rem;
+            color: #ff4081;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .wish-title {
+            font-size: 1.8rem;
+            color: #ff0066;
+            margin-bottom: 15px;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed #ffccdd;
+        }
+        
+        .wish-text {
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+            line-height: 1.8;
+        }
+        
+        /* 蛋糕区域 */
+        .cake-section {
+            background-color: white;
+            border-radius: 25px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(255, 107, 157, 0.1);
+            text-align: center;
+            border: 2px solid #ffe6f2;
+        }
+        
+        .cake-title {
+            font-size: 2.5rem;
+            color: #ff4081;
+            margin-bottom: 30px;
+        }
+        
+        .cake-container {
+            display: inline-block;
+            position: relative;
+            margin: 20px 0;
+        }
+        
+        .cake {
+            width: 200px;
+            height: 120px;
+            background: linear-gradient(to bottom, #ffccdd, #ff99bb);
+            border-radius: 100px 100px 0 0;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .cake::before {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 200px;
+            height: 40px;
+            background: linear-gradient(to bottom, #ff6699, #ff3366);
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .cake-topping {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px;
+            height: 40px;
+            background: linear-gradient(to bottom, #ffd1e0, #ff99bb);
+            border-radius: 100px;
+            z-index: 1;
+        }
+        
+        .candle {
+            position: absolute;
+            top: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 40px;
+            background: linear-gradient(to bottom, #ffcc00, #ff9900);
+            border-radius: 5px;
+            z-index: 2;
+        }
+        
+        .flame {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 30px;
+            background: linear-gradient(to bottom, #ffcc00, #ff6600);
+            border-radius: 50% 50% 20% 20%;
+            animation: flicker 1s infinite alternate;
+            box-shadow: 0 0 20px #ff9900;
+        }
+        
+        @keyframes flicker {
+            0%, 100% { transform: translateX(-50%) scale(1); }
+            50% { transform: translateX(-50%) scale(1.1); }
+        }
+        
+        /* 新增：许愿区 */
+        .wish-area {
+            background-color: white;
+            border-radius: 25px;
+            padding: 50px;
+            margin: 60px 0;
+            box-shadow: 0 15px 35px rgba(255, 107, 157, 0.15);
+            border: 2px solid #ffe6f2;
+        }
+        
+        .wish-area-title {
+            font-size: 2.8rem;
+            color: #ff4081;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .wish-area-title::after {
+            content: "✨";
+            position: absolute;
+            right: 10%;
+            top: 0;
+            font-size: 2.5rem;
+            animation: twinkle 2s infinite;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .wish-form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 30px;
+        }
+        
+        .form-label {
+            display: block;
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .form-input, .form-textarea {
+            width: 100%;
+            padding: 18px 20px;
+            font-size: 1.1rem;
+            border: 2px solid #ffd1e8;
+            border-radius: 15px;
+            transition: all 0.3s;
+            background-color: #fff9fb;
+        }
+        
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: #ff6b9d;
+            box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.2);
+            background-color: white;
+        }
+        
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+            font-family: inherit;
+        }
+        
+        .form-hint {
+            font-size: 1rem;
+            color: #999;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        
+        .wish-submit-btn {
+            display: block;
+            width: 100%;
+            background: linear-gradient(to right, #ff6b9d, #ff4081);
+            color: white;
+            border: none;
+            padding: 20px;
+            font-size: 1.5rem;
+            border-radius: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
+            transition: all 0.3s;
+            margin-top: 30px;
+        }
+        
+        .wish-submit-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 107, 157, 0.4);
+        }
+        
+        .wish-submit-btn:active {
+            transform: translateY(-2px);
+        }
+        
+        /* 愿望展示区 */
+        .wishes-display {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 2px dashed #ffd1e8;
+        }
+        
+        .wishes-display-title {
+            font-size: 2.2rem;
+            color: #ff4081;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .wishes-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .wish-item {
+            background-color: #fff9fb;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #ff6b9d;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .wish-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .wish-author {
+            font-size: 1.2rem;
+            color: #ff4081;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .wish-author::before {
+            content: "👤";
+            margin-right: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .wish-content {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.7;
+        }
+        
+        .wish-time {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 15px;
+            text-align: right;
+        }
+        
+        .empty-wishes {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 1.2rem;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+            border: 2px dashed #ffd1e8;
+        }
+        
+        /* 压轴祝福语区域 */
+        .final-wish {
+            background: linear-gradient(135deg, #ff6b9d, #ff4081);
+            color: white;
+            padding: 60px 30px;
+            border-radius: 25px;
+            text-align: center;
+            margin: 60px 0;
+            box-shadow: 0 15px 35px rgba(255, 107, 157, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .final-wish::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            animation: float 20s linear infinite;
+            z-index: 0;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-30px, -30px) rotate(360deg); }
+        }
+        
+        .final-wish-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .final-wish-icon {
+            font-size: 4rem;
+            margin-bottom: 25px;
+            display: block;
+            animation: bounce 2s infinite;
+        }
+        
+        .final-wish-text {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .final-wish-subtext {
+            font-size: 1.5rem;
+            opacity: 0.95;
+            font-style: italic;
+        }
+        
+        /* 按钮 */
+        .wish-button {
+            display: block;
+            margin: 40px auto;
+            background: linear-gradient(to right, #ff6b9d, #ff4081);
+            color: white;
+            border: none;
+            padding: 18px 50px;
+            font-size: 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
+            transition: all 0.3s;
+        }
+        
+        .wish-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 107, 157, 0.4);
+        }
+        
+        /* 页脚 */
+        .birthday-footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #ff6699;
+            font-size: 1.2rem;
+            padding-top: 30px;
+            border-top: 2px dashed #ffccdd;
+        }
+        
+        .hearts {
+            font-size: 2rem;
+            letter-spacing: 10px;
+            color: #ff4081;
+            margin: 20px 0;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .birthday-title {
+                font-size: 2.5rem;
+            }
+            
+            .birthday-name {
+                font-size: 3rem;
+            }
+            
+            .date-title {
+                font-size: 2.2rem;
+            }
+            
+            .final-wish-text {
+                font-size: 2rem;
+            }
+            
+            .final-wish-subtext {
+                font-size: 1.2rem;
+            }
+            
+            .countdown {
+                gap: 10px;
+            }
+            
+            .countdown-item {
+                min-width: 80px;
+                padding: 15px;
+            }
+            
+            .countdown-number {
+                font-size: 2rem;
+            }
+            
+            .cake {
+                width: 150px;
+                height: 90px;
+            }
+            
+            .cake::before {
+                width: 150px;
+            }
+            
+            .cake-topping {
+                width: 130px;
+            }
+            
+            .wish-area {
+                padding: 30px 20px;
+            }
+            
+            .wish-area-title {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-decoration"></div>
+    
+    <div class="container">
+        <div class="birthday-header">
+            <div class="date-badge">
+                <i class="fas fa-calendar-alt"></i> 12月19日 • 专属生日
+            </div>
+            <h1 class="birthday-title">生日快乐！</h1>
+            <div class="birthday-name">陈小皓</div>
+            <p style="font-size: 1.5rem; color: #ff6699; margin-top: 20px;">
+                <i class="fas fa-star"></i> 愿你的特别日子充满欢笑与惊喜！
+            </p>
+        </div>
+        
+        <!-- 星座专区 -->
+        <div class="zodiac-section">
+            <h2 class="zodiac-title">射手座生日特辑</h2>
+            <div class="zodiac-icon">♐</div>
+            <p class="zodiac-desc">
+                12月19日是射手座的最后一天，这一天出生的你拥有射手座的热情、乐观与自由精神。
+                你热爱探索新事物，充满冒险精神，同时拥有射手座的智慧与幽默感。
+                愿新的一岁，你继续保持这份热情，探索更广阔的世界，收获更多的快乐与成长！
+            </p>
+        </div>
+        
+        <!-- 特别日期区域 -->
+        <div class="special-date">
+            <div class="special-date-content">
+                <h2 class="date-title">专属生日 · 12月19日</h2>
+                <p class="date-subtitle">在这个特别的日子里，愿所有的美好都为你而来</p>
+                
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">0</div>
+                        <div class="countdown-label">天</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">0</div>
+                        <div class="countdown-label">小时</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">0</div>
+                        <div class="countdown-label">分钟</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">0</div>
+                        <div class="countdown-label">秒</div>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 30px; font-size: 1.2rem; color: #666;">
+                    距离你的生日还有 <span id="countdown-text">...</span>
+                </p>
+            </div>
+        </div>
+        
+        <!-- 祝福卡片 -->
+        <div class="wishes-container">
+            <div class="wish-card">
+                <div class="wish-icon">🎂</div>
+                <h3 class="wish-title">生日祝福</h3>
+                <p class="wish-text">愿你生命中的每个愿望都能实现，每一天都充满阳光和欢笑！愿新的一岁带给你更多美好时光！</p>
+            </div>
+            
+            <div class="wish-card">
+                <div class="wish-icon">🌟</div>
+                <h3 class="wish-title">射手座祝福</h3>
+                <p class="wish-text">愿射手座的自由精神带你飞向更广阔的天空，探索无限可能！保持你的热情与好奇心！</p>
+            </div>
+            
+            <div class="wish-card">
+                <div class="wish-icon">💝</div>
+                <h3 class="wish-title">冬日祝福</h3>
+                <p class="wish-text">在这个寒冷的12月，愿温暖与快乐如阳光般洒满你的生活！愿健康、幸福常伴你左右！</p>
+            </div>
+        </div>
+        
+        <!-- 蛋糕区域 -->
+        <div class="cake-section">
+            <h2 class="cake-title">为陈小皓点燃生日蜡烛！</h2>
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="cake-topping"></div>
+                    <div class="candle"></div>
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <p style="margin-top: 30px; font-size: 1.3rem; color: #ff6699;">许个愿吧，陈小皓！愿你所有的梦想都能成真！</p>
+        </div>
+        
+        <!-- 新增：许愿区 -->
+        <div class="wish-area">
+            <h2 class="wish-area-title">🎋 生日许愿区 🎋</h2>
+            
+            <div class="wish-form">
+                <div class="form-group">
+                    <label for="wisher-name" class="form-label">你的名字：</label>
+                    <input type="text" id="wisher-name" class="form-input" placeholder="输入你的名字或昵称" maxlength="20">
+                    <p class="form-hint">留下名字，让陈小皓知道是谁送上的祝福</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="wish-content" class="form-label">你的祝福/愿望：</label>
+                    <textarea id="wish-content" class="form-textarea" placeholder="写下你对陈小皓的生日祝福，或者帮他许一个生日愿望吧！" maxlength="300"></textarea>
+                    <p class="form-hint">最多300字，你的祝福会显示在下方</p>
+                </div>
+                
+                <button class="wish-submit-btn" id="submitWishBtn">
+                    <i class="fas fa-paper-plane"></i> 送出祝福
+                </button>
+            </div>
+            
+            <!-- 愿望展示区 -->
+            <div class="wishes-display">
+                <h3 class="wishes-display-title">📜 已收到的祝福</h3>
+                
+                <div class="wishes-list" id="wishesList">
+                    <div class="empty-wishes" id="emptyWishes">
+                        <i class="fas fa-comment-alt" style="font-size: 3rem; margin-bottom: 15px; display: block; color: #ffccdd;"></i>
+                        <p>还没有祝福哦~ 快成为第一个送上祝福的人吧！</p>
+                    </div>
+                    
+                    <!-- 示例祝福（默认显示） -->
+                    <div class="wish-item example-wish" style="display: none;">
+                        <div class="wish-author">好朋友小明</div>
+                        <div class="wish-content">陈小皓，生日快乐！愿你的新一岁充满欢笑与成功，所有愿望都能实现！</div>
+                        <div class="wish-time">刚刚</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 压轴祝福语区域 -->
+        <div class="final-wish">
+            <div class="final-wish-content">
+                <span class="final-wish-icon">✨</span>
+                <h2 class="final-wish-text">매일매일 조금이라도 행복하자</h2>
+                <p class="final-wish-subtext">每天都要幸福一点点 • 来自真挚的祝福</p>
+            </div>
+        </div>
+        
+        <button class="wish-button" id="wishBtn">
+            <i class="fas fa-birthday-cake"></i> 为陈小皓送上生日祝福
+        </button>
+        
+        <div class="birthday-footer">
+            <div class="hearts">💖 🎂 🎉 🎁 🌟</div>
+            <p>特别为陈小皓定制 • 12月19日生日快乐！</p>
+            <p>愿你的新一岁，充满欢笑、成功与无限可能！</p>
+            <p style="margin-top: 20px; font-size: 1rem; color: #ff99bb;">
+                <i class="fas fa-heart"></i> 设计于 <span id="currentDate"></span>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // 设置当前日期
+        const currentDate = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+        document.getElementById('currentDate').textContent = currentDate.toLocaleDateString('zh-CN', options);
+        
+        // 生日日期 (12月19日)
+        const currentYear = currentDate.getFullYear();
+        let birthday = new Date(currentYear, 11, 19); // 月份是0索引，11代表12月
+        
+        // 如果今年生日已过，计算明年的生日
+        
+        // 更新倒计时
+        function updateCountdown() {
+            const now = new Date();
+            const diff = birthday - now;
+            
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // 更新文字描述
+            if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+                document.getElementById('countdown-text').textContent = "就是今天！生日快乐！";
+                document.getElementById('countdown-text').style.color = "#ff0066";
+                document.getElementById('countdown-text').style.fontWeight = "bold";
+            } else if (days === 0) {
+                document.getElementById('countdown-text').textContent = "不到24小时！";
+                document.getElementById('countdown-text').style.color = "#ff0066";
+            } else {
+                document.getElementById('countdown-text').textContent = `${days}天${hours}小时${minutes}分钟`;
+            }
+        }
+        
+        // 初始更新
+        updateCountdown();
+        // 每秒更新一次
+        setInterval(updateCountdown, 1000);
+        
+        // 存储愿望的数组
+        let wishes = [];
+        
+        // 从本地存储加载愿望
+        function loadWishesFromStorage() {
+            const savedWishes = localStorage.getItem('chenxiaohaoBirthdayWishes');
+            if (savedWishes) {
+                wishes = JSON.parse(savedWishes);
+                renderWishes();
+            }
+        }
+        
+        // 保存愿望到本地存储
+        function saveWishesToStorage() {
+            localStorage.setItem('chenxiaohaoBirthdayWishes', JSON.stringify(wishes));
+        }
+        
+        // 渲染愿望列表
+        function renderWishes() {
+            const wishesList = document.getElementById('wishesList');
+            const emptyWishes = document.getElementById('emptyWishes');
+            
+            // 清空列表
+            wishesList.innerHTML = '';
+            
+            // 如果没有愿望，显示空状态
+            if (wishes.length === 0) {
+                emptyWishes.style.display = 'block';
+                wishesList.appendChild(emptyWishes);
+                return;
+            }
+            
+            // 隐藏空状态
+            emptyWishes.style.display = 'none';
+            
+            // 按时间倒序排列（最新的在前面）
+            const sortedWishes = [...wishes].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+            
+            // 渲染每个愿望
+            sortedWishes.forEach(wish => {
+                const wishItem = document.createElement('div');
+                wishItem.className = 'wish-item';
+                wishItem.innerHTML = `
+                    <div class="wish-author">${wish.name}</div>
+                    <div class="wish-content">${wish.content}</div>
+                    <div class="wish-time">${formatTime(wish.timestamp)}</div>
+                `;
+                wishesList.appendChild(wishItem);
+            });
+        }
+        
+        // 格式化时间
+        function formatTime(timestamp) {
+            const now = new Date();
+            const wishTime = new Date(timestamp);
+            const diffInMinutes = Math.floor((now - wishTime) / (1000 * 60));
+            
+            if (diffInMinutes < 1) {
+                return '刚刚';
+            } else if (diffInMinutes < 60) {
+                return `${diffInMinutes}分钟前`;
+            } else if (diffInMinutes < 1440) { // 24小时
+                const hours = Math.floor(diffInMinutes / 60);
+                return `${hours}小时前`;
+            } else {
+                return wishTime.toLocaleDateString('zh-CN', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+            }
+        }
+        
+        // 提交愿望
+        document.getElementById('submitWishBtn').addEventListener('click', function() {
+            const nameInput = document.getElementById('wisher-name');
+            const contentInput = document.getElementById('wish-content');
+            
+            const name = nameInput.value.trim();
+            const content = contentInput.value.trim();
+            
+            // 验证输入
+            if (!name) {
+                alert('请输入你的名字哦~');
+                nameInput.focus();
+                return;
+            }
+            
+            if (!content) {
+                alert('请写下你的祝福或愿望~');
+                contentInput.focus();
+                return;
+            }
+            
+            if (name.length > 20) {
+                alert('名字不能超过20个字哦~');
+                nameInput.focus();
+                return;
+            }
+            
+            if (content.length > 300) {
+                alert('祝福内容不能超过300个字哦~');
+                contentInput.focus();
+                return;
+            }
+            
+            // 创建新愿望
+            const newWish = {
+                name: name,
+                content: content,
+                timestamp: new Date().toISOString()
+            };
+            
+            // 添加到愿望数组
+            wishes.unshift(newWish);
+            
+            // 保存到本地存储
+            saveWishesToStorage();
+            
+            // 重新渲染愿望列表
+            renderWishes();
+            
+            // 清空输入框
+            nameInput.value = '';
+            contentInput.value = '';
+            
+            // 显示成功消息
+            showSuccessMessage();
+            
+            // 添加视觉反馈
+            createFloatingWish(`祝福已送出！谢谢你，${name}！`);
+            
+            // 添加一些视觉反馈
+            const icons = ['💖', '🎂', '🎉', '🎁', '🌟', '✨'];
+            for (let i = 0; i < 8; i++) {
+                createFloatingIcon(icons[Math.floor(Math.random() * icons.length)]);
+            }
+        });
+        
+        // 显示成功消息
+        function showSuccessMessage() {
+            const submitBtn = document.getElementById('submitWishBtn');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> 祝福已送出！';
+            submitBtn.style.background = 'linear-gradient(to right, #4CAF50, #2E7D32)';
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = 'linear-gradient(to right, #ff6b9d, #ff4081)';
+            }, 2000);
+        }
+        
+        // 祝福按钮功能
+        document.getElementById('wishBtn').addEventListener('click', function() {
+            const messages = [
+                "陈小皓，生日快乐！愿你的生活如彩虹般绚丽多彩！",
+                "生日快乐！愿新的一岁带给你更多欢笑与成就！",
+                "射手座的陈小皓，生日快乐！愿自由与快乐永远属于你！",
+                "12月19日生日快乐！愿温暖与幸福永远伴随你！",
+                "陈小皓，生日快乐！愿你的每一天都充满阳光与希望！",
+                "生日快乐！愿你的梦想如星光般璀璨，未来如朝阳般灿烂！"
+            ];
+            
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            
+            // 创建漂浮祝福
+            createFloatingWish(randomMessage);
+            
+            // 按钮效果
+            this.innerHTML = '<i class="fas fa-heart"></i> 祝福已送出！';
+            this.style.background = 'linear-gradient(to right, #ff3366, #ff0066)';
+            
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-birthday-cake"></i> 再次送上祝福';
+                this.style.background = 'linear-gradient(to right, #ff6b9d, #ff4081)';
+            }, 2000);
+            
+            // 添加一些视觉反馈
+            const icons = ['💖', '🎂', '🎉', '🎁', '🌟', '✨'];
+            for (let i = 0; i < 12; i++) {
+                createFloatingIcon(icons[Math.floor(Math.random() * icons.length)]);
+            }
+        });
+        
+        // 创建漂浮图标
+        function createFloatingIcon(icon) {
+            const floatingIcon = document.createElement('div');
+            floatingIcon.innerHTML = icon;
+            floatingIcon.style.position = 'fixed';
+            floatingIcon.style.left = Math.random() * 100 + 'vw';
+            floatingIcon.style.top = '100vh';
+            floatingIcon.style.fontSize = (Math.random() * 25 + 25) + 'px';
+            floatingIcon.style.opacity = '0.9';
+            floatingIcon.style.zIndex = '9999';
+            floatingIcon.style.pointerEvents = 'none';
+            floatingIcon.style.userSelect = 'none';
+            document.body.appendChild(floatingIcon);
+            
+            // 动画效果
+            const animation = floatingIcon.animate([
+                { transform: 'translateY(0) rotate(0deg)', opacity: 0.9 },
+                { transform: `translateY(-${Math.random() * 400 + 200}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+            ], {
+                duration: Math.random() * 3000 + 2000,
+                easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)'
+            });
+            
+            animation.onfinish = () => {
+                document.body.removeChild(floatingIcon);
+            };
+        }
+        
+        // 创建漂浮祝福语
+        function createFloatingWish(message) {
+            const floatingWish = document.createElement('div');
+            floatingWish.innerHTML = message;
+            floatingWish.style.position = 'fixed';
+            floatingWish.style.left = '50%';
+            floatingWish.style.top = '50%';
+            floatingWish.style.transform = 'translate(-50%, -50%)';
+            floatingWish.style.fontSize = '1.2rem';
+            floatingWish.style.color = '#ff0066';
+            floatingWish.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+            floatingWish.style.padding = '15px 25px';
+            floatingWish.style.borderRadius = '50px';
+            floatingWish.style.boxShadow = '0 10px 30px rgba(255, 0, 102, 0.3)';
+            floatingWish.style.zIndex = '10000';
+            floatingWish.style.fontWeight = 'bold';
+            floatingWish.style.textAlign = 'center';
+            floatingWish.style.maxWidth = '80%';
+            document.body.appendChild(floatingWish);
+            
+            // 动画效果
+            const animation = floatingWish.animate([
+                { transform: 'translate(-50%, -50%) scale(0.8)', opacity: 0 },
+                { transform: 'translate(-50%, -50%) scale(1)', opacity: 1 },
+                { transform: 'translate(-50%, -150%) scale(0.8)', opacity: 0 }
+            ], {
+                duration: 3000,
+                easing: 'cubic-bezier(0.215, 0.61, 0.355, 1)'
+            });
+            
+            animation.onfinish = () => {
+                document.body.removeChild(floatingWish);
+            };
+        }
+        
+        // 蛋糕蜡烛闪烁效果
+        const flame = document.querySelector('.flame');
+        setInterval(() => {
+            flame.style.animation = 'none';
+            setTimeout(() => {
+                flame.style.animation = 'flicker 1s infinite alternate';
+            }, 10);
+        }, 3000);
+        
+        // 页面加载时初始化
+        window.addEventListener('load', function() {
+            // 加载愿望
+            loadWishesFromStorage();
+            
+            // 显示欢迎消息
+            setTimeout(() => {
+                createFloatingWish("欢迎来到陈小皓的生日页面！可以写下你的祝福哦~");
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
