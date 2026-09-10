@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>待办事项</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>📝 待办事项</h1>
+
+  <div class="add-box">
+    <input type="text" id="taskInput" placeholder="请输入待办内容">
+    <button id="addBtn">添加</button>
+  </div>
+  <p id="tip">⚠ 输入内容不能为空，请先输入待办内容！</p>
+
+  <p class="stats">未完成：<strong id="leftCount">0</strong></p>
+
+  <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

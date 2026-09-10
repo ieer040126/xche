@@ -1,0 +1,174 @@
+/* ========== 待办事项 样式 ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+  padding: 28px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* ---- 输入区 ---- */
+.add-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+#taskInput:focus {
+  border-color: #667eea;
+}
+
+#addBtn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+#addBtn:hover {
+  background: #5568d3;
+}
+
+/* ---- 空输入提示：默认隐藏，空输入时显示 ---- */
+#tip {
+  min-height: 20px;
+  font-size: 13px;
+  color: #e74c3c;
+  margin-bottom: 4px;
+  visibility: hidden;
+}
+
+#tip.show {
+  visibility: visible;
+}
+
+/* ---- 未完成计数 ---- */
+.stats {
+  font-size: 14px;
+  color: #666;
+  margin: 6px 0 14px;
+}
+
+.stats strong {
+  color: #667eea;
+  font-size: 18px;
+}
+
+/* ---- 列表 ---- */
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: background .2s;
+}
+
+li:hover {
+  background: #f8f9ff;
+}
+
+li .text {
+  flex: 1;
+  font-size: 15px;
+  color: #333;
+  word-break: break-all;
+}
+
+/* 已完成状态：删除线 */
+li.done .text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* ---- 按钮 ---- */
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 13px;
+  padding: 7px 12px;
+  transition: .2s;
+}
+
+.finish-btn {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.finish-btn:hover {
+  background: #27ae60;
+}
+
+li.done .finish-btn {
+  background: #95a5a6;
+}
+
+li.done .finish-btn:hover {
+  background: #7f8c8d;
+}
+
+.del-btn {
+  background: #e74c3c;
+  color: #fff;
+  padding: 7px 14px;
+  font-weight: bold;
+}
+
+.del-btn:hover {
+  background: #c0392b;
+}
+
+/* ---- 空列表占位提示 ---- */
+li.empty {
+  border: none;
+  background: none;
+  justify-content: center;
+  color: #aaa;
+  font-size: 14px;
+  padding: 20px 0;
+}
