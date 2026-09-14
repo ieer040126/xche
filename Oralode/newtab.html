@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>白虎</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="./index.js" type="module"></script>
+</head>
+<body>
+
+	<nav id="engine-select">
+		<img src="res/bing.svg" alt="Bing">
+		<img src="res/bilibili.svg" alt="Bilibili">
+		<img src="res/google.svg" alt="Google">
+		<img src="res/duckduckgo.png" alt="DuckDuckGo">
+		<img src="res/baidu.svg" alt="Baidu">
+		<img src="res/sogou.svg" alt="Sougo">
+		<div id="theme-toggle" class="theme-toggle">
+			<span class="theme-icon">◐</span>
+		</div>
+	</nav>
+	
+	<div id="timer-panel" class="timer-panel">
+		<div class="timer-section">
+			<h3>计时器</h3>
+			<div class="timer-display" id="timer-display">00:00:00</div>
+			<div class="timer-controls">
+				<button id="timer-start" class="timer-btn">开始</button>
+				<button id="timer-reset" class="timer-btn">重置</button>
+			</div>
+		</div>
+		
+		<div class="countdown-section">
+			<h3>倒计时</h3>
+			<div class="countdown-display" id="countdown-display">00:00:00</div>
+			<div class="countdown-input">
+				<input type="number" id="countdown-hours" class="countdown-input-field" min="0" max="23" value="0" placeholder="时">
+				<input type="number" id="countdown-minutes" class="countdown-input-field" min="0" max="59" value="5" placeholder="分">
+				<input type="number" id="countdown-seconds" class="countdown-input-field" min="0" max="59" value="0" placeholder="秒">
+				<button id="countdown-set" class="timer-btn">设置</button>
+			</div>
+			<div class="countdown-controls">
+				<button id="countdown-start" class="timer-btn">开始</button>
+				<button id="countdown-reset" class="timer-btn">重置</button>
+			</div>
+		</div>
+	</div>
+	
+	<main>
+		<section>
+			<div class="content-wrapper">
+				<div class="time-display" id="time-display">
+					<div class="date-part" id="date-part"></div>
+					<div class="time-part" id="time-part"></div>
+				</div>
+				<div class="search-container">
+					<form id="search-form" class="search-form">
+						<input type="text" id="search-input" class="search-input" placeholder="请输入搜索内容...">
+						<button type="submit" class="search-button">搜索</button>
+					</form>
+				</div>
+				<!-- 快捷访问区域 -->
+				<div class="quick-access-container">
+					<h3 class="quick-access-title">快捷访问</h3>
+					<div class="quick-access-grid" id="quick-access-grid">
+						<!-- 快捷访问网站将通过JavaScript动态添加 -->
+					</div>
+					<button class="add-site-button" id="add-site-button">+</button>
+				</div>
+			</div>
+			<!-- 添加网站模态框 -->
+			<div class="modal" id="add-site-modal">
+				<div class="modal-content">
+					<span class="close" id="close-modal">&times;</span>
+					<h2>添加网站</h2>
+					<form id="add-site-form">
+						<label for="site-name">网站名称:</label>
+						<input type="text" id="site-name" required>
+						<label for="site-url">网站地址:</label>
+						<input type="url" id="site-url" placeholder="https://example.com" required>
+						<button type="submit" class="submit-button">添加</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+</body>
+</html>

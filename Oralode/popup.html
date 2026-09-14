@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>白虎</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="css/popup/popup.css">
+	<script src="./js/popup/popup.js" type="module"></script>
+</head>
+<body>
+	<div class="popup-container">
+		<div class="header">
+			<h1>白虎</h1>
+			<div id="theme-toggle" class="theme-toggle">
+				<span class="theme-icon">◐</span>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="time-display" id="time-display">
+				<div class="date-part" id="date-part"></div>
+				<div class="time-part" id="time-part"></div>
+			</div>
+			
+			<div class="search-container">
+				<form id="search-form" class="search-form">
+					<input type="text" id="search-input" class="search-input" placeholder="请输入搜索内容...">
+					<button type="submit" class="search-button">搜索</button>
+				</form>
+			</div>
+			
+			<div class="quick-access-container">
+				<h3 class="quick-access-title">快捷访问</h3>
+				<div class="quick-access-grid" id="quick-access-grid">
+					<!-- 快捷访问网站将通过JavaScript动态添加 -->
+				</div>
+			</div>
+			
+			<button id="open-new-tab" class="new-tab-button">打开新标签页</button>
+		</div>
+	</div>
+</body>
+</html>

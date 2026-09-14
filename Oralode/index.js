@@ -1,0 +1,6 @@
+import "./js/newtap/nav.js"
+import "./js/newtap/search.js"
+import "./js/newtap/time.js"
+import "./js/newtap/timer.js"
+import "./js/newtap/quickaccess.js"
+import "./js/newtap/theme.js"

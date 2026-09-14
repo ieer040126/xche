@@ -1,0 +1,462 @@
+.search-container {
+    width: 100%;
+    max-width: 1200px; /* 进一步增加最大宽度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* 增加按钮和输入框之间的间距 */
+}
+
+.time-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    border: 2px solid var(--glass-border);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.date-part {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.time-part {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+    letter-spacing: 2px;
+}
+
+.search-input {
+    flex: 1;
+    height: 50px;
+    padding: 0 25px; /* 增加内边距 */
+    font-size: 16px;
+    border-radius: 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    border: 2px solid var(--glass-border);
+    color: var(--text-color);
+    outline: none;
+    transition: all 0.3s ease;
+    min-width: 500px; /* 增加最小宽度以确保足够的输入空间 */
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.2);
+}
+
+.search-button {
+    height: 50px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-color-2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    border: 2px solid var(--glass-border);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    box-shadow: 0 12px 40px var(--accent-color);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.search-button:active {
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* 计时器和倒计时面板样式 */
+.timer-panel {
+    position: absolute;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    width: 200px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    border: 2px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timer-section, .countdown-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-section h3, .countdown-section h3 {
+    margin: 0 0 10px 0;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.timer-display, .countdown-display {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.timer-controls, .countdown-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.countdown-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.countdown-input-field {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.timer-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-color-2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.timer-btn:hover {
+    box-shadow: 0 6px 20px var(--accent-color);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.timer-btn:active {
+    box-shadow: 0 3px 10px rgba(102, 126, 234, 0.3);
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .timer-panel {
+        right: 1rem;
+        width: 180px;
+        padding: 15px 10px;
+    }
+    
+    .timer-display, .countdown-display {
+        font-size: 20px;
+    }
+    
+    .countdown-input-field {
+        width: 45px;
+        height: 28px;
+        font-size: 11px;
+    }
+    
+    .timer-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+/* 快捷访问样式 */
+.quick-access-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    border: 2px solid var(--glass-border);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.quick-access-title {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.quick-access-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.quick-access-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.quick-access-item:hover {
+    transform: scale(1.1);
+}
+
+.quick-access-favicon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.quick-access-name {
+    font-size: 12px;
+    color: var(--text-color);
+    text-align: center;
+    word-break: break-word;
+    max-width: 80px;
+}
+
+.add-site-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-color-2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.add-site-button:hover {
+    box-shadow: 0 6px 20px var(--accent-color);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 模态框样式 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    border: 2px solid var(--glass-border);
+    width: 80%;
+    max-width: 400px;
+    color: var(--text-color);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-color-2));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    box-shadow: 0 6px 20px var(--accent-color);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* 主内容包装器 - 使用flex布局垂直排列时间、搜索框和快捷访问 */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* 元素之间的间距 */
+    width: 100%;
+    max-width: 1200px; /* 增加最大宽度以适应更长的搜索框 */
+    padding: 20px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .time-display {
+        width: 80%;
+        padding: 15px;
+    }
+    
+    .date-part {
+        font-size: 14px;
+    }
+    
+    .time-part {
+        font-size: 28px;
+    }
+    
+    .search-container {
+        width: 95%; /* 在小屏幕上进一步增加宽度 */
+    }
+    
+    .search-input {
+        height: 45px;
+        padding: 0 15px;
+        font-size: 14px;
+        min-width: 250px; /* 在小屏幕上增加最小宽度 */
+    }
+    
+    .search-button {
+        height: 45px;
+        padding: 0 20px;
+        font-size: 14px;
+    }
+    
+    .timer-panel {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 80%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+    
+    .quick-access-container {
+        width: 80%;
+        padding: 15px;
+    }
+    
+    .quick-access-grid {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+        gap: 10px;
+    }
+    
+    .quick-access-favicon {
+        width: 24px;
+        height: 24px;
+        color: #333;
+    }
+    
+    /* 在小屏幕上减小间距 */
+    .content-wrapper {
+        gap: 20px;
+        padding: 15px;
+        max-width: 900px; /* 在小屏幕上增加最大宽度 */
+    }
+    
+    .quick-access-name {
+        font-size: 10px;
+        max-width: 60px;
+    }
+}

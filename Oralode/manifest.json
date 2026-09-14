@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "白虎",
+  "version": "1.0",
+  "description": "简洁无广告的Chrome内核主页，给你带来一个愉快的一天。作者：LaT-SKY。",
+  "permissions": [],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Oralode"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
